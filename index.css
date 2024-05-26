@@ -1,0 +1,240 @@
+
+/* This is body where the css is applied to style the style the whole body  */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 400% 400%;
+    margin: 0;
+    padding: 20px;
+    animation: color 12s ease-in-out infinite;
+    animation: 15s ease infinite;
+}
+
+/* This header tag where the Css has applied to modified the header of html  */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    background-size: 300% 300%;
+    border-radius: 5px;
+    animation: animate 40s infinite alternate;
+}
+ /* This is a animation property which has applied in header to  make the header element animate */
+@keyframes animate {
+    from{
+        background-position:0%;
+    }
+  to{
+    background-position: 100%;
+  }
+
+}
+/* Here  the Css styling has applied in h1 tag of header section */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+   color: aliceblue;
+}
+/* here the Hover effect has add in h1 element of header section */
+header h1:hover{
+    color: darkslategrey;
+}
+ 
+
+
+
+/* Here the Css styling has applied in paragraph element of header section */
+header p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    animation: animate 2s linear alternate;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+  
+
+
+
+/* Here the actual property is add to make it animate */
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* Here the Css STyling has applied in the main container of html  */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Here we have added the widht in display-section inside the from-section */
+.form-section, .display-section {
+    width: 48%;
+}
+/* Here the Css styling has applied in form-section to make div  */
+.form-section{
+    width: 50%;
+    height: 500px;
+    box-shadow:#d2001a,#7462ff,#f48e21,#23d5ab ;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+/* Here the Css animation styling  has add in form section  */
+.form-section::before, .form-section::after{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,green,blue,yellow);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite ;
+    
+}
+/* Here the actual animation property has added */
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}
+/* Here the Css styling has add to make the animated blur border */
+.form-section::after{
+    filter: blur(10px);
+    /* opacity: 0.1; */
+}
+/* Here the Css styling has added in display-section inside the main container */
+.display-section{
+  
+        width: 50%;
+        height: 500px;
+       
+        padding: 10px 10px;
+        margin-left: 6px;
+        border-radius: 20px;
+    
+}
+/* Here the Css styling has added in display-section to add a scrollbar inside the display-section */
+.display-section{
+    height: 300px;
+    
+    overflow-y: scroll;
+}
+
+
+/* Here the Css styling has add in main form section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+/* Here the Css styling has added in label of form */
+form label {
+    margin: 5px 0;
+    color: white;
+}
+/* Here the Css styling has added in input field inside form section */
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Here the Css styling has added in form button to make modified */
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Here the pseudo class  has added in forms button to change the background color of button */
+form button:hover {
+    background-color: #45a049;
+}
+/* Here the Css has added in the table element inside the main container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+/* Here the Css styling has added in table head element and table data element  */
+table, th, td {
+    border: 1px solid #ccc;
+}
+/* Here the Css styling has added in table heading and table data separately */
+th, td {
+    padding: 10px;
+    text-align: left;
+
+}
+/* Here the background color has added in table heading  */
+th {
+    background-color: #f2f2f2;
+}
+/* Here the Css STyling has added in button to make edit and delete */
+button.edit, button.delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* here the background and text color edit funciton  has added throught Css in button element */
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+/* here the delete proptery has added in button  */
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
+/* here the hover property has added in button.edit element */
+button.edit:hover {
+    background-color: #45a049;
+}
+/* here the hover property has added in button in delete */
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+
+
+  

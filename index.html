@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--This is a header section-->
+
+    <header>
+
+        <!--This is h1 tage-->
+
+        <h1>Student <span>   Registration System</span> </h1>
+
+        <!-- This is a p tage-->
+
+        <p>A student registration system is a software solution that helps you tackle every part of the discovery, enrollment, and engagement process.</p>
+
+        <!--from here my header section is ended-->
+
+    </header>
+
+    <!-- from here my  main container is starting -->
+
+
+    <div class="container">
+
+        <!-- this is a child element -->
+
+        <div class="form-section">
+
+            <!-- from here my form section is starting -->
+
+            <form id="studentForm">
+                <!-- These are the labels for perticular items -->
+                <label for="studentName">Student Name:</label>
+
+                <input type="text" id="studentName" name="studentName" required >
+                
+                <label for="studentId">Student ID:</label>
+                <input type="number" id="studentId" name="studentId" required>
+                
+                <label for="emailId">Email ID:</label>
+                <input type="email" id="emailId" name="emailId" required>
+                
+                <label for="contactNo">Contact No:</label>
+                <input type="number" id="contactNo" name="contactNo" required>
+
+                <!-- This is a button to submit the form -->
+
+                <button type="submit">submit</button>
+
+                <!-- here my form is ending -->
+
+            </form>
+        </div>
+        <!-- from here my another div section is starting -->
+
+        <div class="display-section">
+
+            <!-- from here my table  starting -->
+            <table>    
+
+                <!-- This is table head  -->
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <!-- here my table tag is ending -->
+
+                <!-- from here my table data will be inserted -->
+
+
+                <tbody id="studentTableBody">
+
+                    <!-- Dynamic rows go here -->
+
+                </tbody>
+
+                <!-- here my table is ended -->
+            </table>
+        </div>
+
+        <!-- This is a div to add javascript -->
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
